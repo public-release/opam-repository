@@ -10,9 +10,9 @@ build: [
   ["dune" "build" "-p" name "-j" jobs]
 ]
 depends: [
-  "ocaml"  {>= "5.1.0"}
+  "ocaml"  {>= "5.3.0"}
   "dune"   {>= "3.11.0"}
-  "ppxlib" {>= "0.28.0"}
+  "ppxlib" {>= "0.33.0"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Utilities for working with Jane Street AST constructs"
@@ -20,6 +20,10 @@ description: "
 Part of the Jane Street's PPX rewriters collection.
 "
 url {
-src: "https://github.com/janestreet/ppxlib_jane/archive/refs/tags/v0.17.0.tar.gz"
-checksum: "sha256=42757d7b44a5f2a766778e6b4710100c6ef9d0c074eb3e7fa4c69647336d8398"
+  src:
+    "https://github.com/janestreet/ppxlib_jane/archive/refs/tags/v0.17.0.tar.gz"
+  checksum: [
+    "md5=3e36e512a92c2c154bd7615102bc9387"
+    "sha512=0907a5c9dfce17dab6df86bc8b04b20c1f809c45a89e947c1da57092851489c618c741aabb853fdc6ca48f4737a74ee2a8c8fc1abfbd85939fd003991adccc09"
+  ]
 }
